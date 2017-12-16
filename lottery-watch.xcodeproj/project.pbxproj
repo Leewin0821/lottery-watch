@@ -20,6 +20,7 @@
 		B5BCA8B51FE5103200E9D64B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCA8B41FE5103200E9D64B /* ExtensionDelegate.swift */; };
 		B5BCA8B71FE5103200E9D64B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCA8B61FE5103200E9D64B /* NotificationController.swift */; };
 		B5BCA8B91FE5103200E9D64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BCA8B81FE5103200E9D64B /* Assets.xcassets */; };
+		B5BCA8CB1FE5243800E9D64B /* ChangeDisplayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCA8CA1FE5243800E9D64B /* ChangeDisplayService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		B5BCA8B81FE5103200E9D64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5BCA8BA1FE5103200E9D64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5BCA8BB1FE5103200E9D64B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B5BCA8CA1FE5243800E9D64B /* ChangeDisplayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDisplayService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		B5BCA88E1FE5103200E9D64B /* lottery-watch */ = {
 			isa = PBXGroup;
 			children = (
+				B5BCA8C91FE5240600E9D64B /* service */,
 				B5BCA88F1FE5103200E9D64B /* AppDelegate.swift */,
 				B5BCA8911FE5103200E9D64B /* ViewController.swift */,
 				B5BCA8931FE5103200E9D64B /* Main.storyboard */,
@@ -157,6 +160,14 @@
 				B5BCA8BB1FE5103200E9D64B /* PushNotificationPayload.apns */,
 			);
 			path = "lottery-watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B5BCA8C91FE5240600E9D64B /* service */ = {
+			isa = PBXGroup;
+			children = (
+				B5BCA8CA1FE5243800E9D64B /* ChangeDisplayService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BCA8CB1FE5243800E9D64B /* ChangeDisplayService.swift in Sources */,
 				B5BCA8921FE5103200E9D64B /* ViewController.swift in Sources */,
 				B5BCA8901FE5103200E9D64B /* AppDelegate.swift in Sources */,
 			);

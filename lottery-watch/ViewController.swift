@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btnTable: UIButton!
+    @IBOutlet weak var btnSphere: UIButton!
+    @IBOutlet weak var btnHelix: UIButton!
+    @IBOutlet weak var btnGrid: UIButton!
+    @IBOutlet weak var btnOne: UIButton!
+    private let changeDisplayService = ChangeDisplayService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +26,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func changeDisplay(_ sender: UIButton) {
+        changeDisplayService.changeDisplay(model: sender.currentTitle!)
+    }
 
 }
 

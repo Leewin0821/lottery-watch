@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,113 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lottery_watch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWr-MS-uFg">
+                                <rect key="frame" x="0.0" y="128" width="375" height="128"/>
+                                <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="rX7-Ot-nAg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="SPHERE">
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeDisplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jub-S2-zXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07B-5h-5HT">
+                                <rect key="frame" x="0.0" y="255" width="375" height="148"/>
+                                <color key="backgroundColor" red="0.54509803921568623" green="0.76470588235294112" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="Tl4-gl-jLP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="HELIX">
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeDisplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zEK-Iz-Vbg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XT-WT-I6Q">
+                                <rect key="frame" x="0.0" y="402" width="375" height="129"/>
+                                <color key="backgroundColor" red="0.80392156862745101" green="0.86274509803921573" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="6kp-uz-9xX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="GRID">
+                                    <color key="titleColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeDisplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wP5-UK-BX0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i25-3d-dRO">
+                                <rect key="frame" x="0.0" y="530" width="375" height="137"/>
+                                <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="jV3-YR-oMD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="ONE">
+                                    <color key="titleColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeDisplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuO-nj-ozc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiP-fI-rZg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Y8g-P5-f6q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="TABLE">
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeDisplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fHb-Sr-EJa"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="07B-5h-5HT" firstAttribute="trailing" secondItem="2XT-WT-I6Q" secondAttribute="trailing" id="Eli-YZ-QYR"/>
+                            <constraint firstItem="BWr-MS-uFg" firstAttribute="top" secondItem="GiP-fI-rZg" secondAttribute="bottom" id="MZ1-Dz-Vdi"/>
+                            <constraint firstItem="2XT-WT-I6Q" firstAttribute="leading" secondItem="i25-3d-dRO" secondAttribute="leading" id="PCu-BQ-OBp"/>
+                            <constraint firstItem="2XT-WT-I6Q" firstAttribute="trailing" secondItem="i25-3d-dRO" secondAttribute="trailing" id="T0W-ZH-54C"/>
+                            <constraint firstItem="GiP-fI-rZg" firstAttribute="trailing" secondItem="BWr-MS-uFg" secondAttribute="trailing" id="VRE-u6-kbX"/>
+                            <constraint firstItem="i25-3d-dRO" firstAttribute="bottom" secondItem="Uee-0j-aNJ" secondAttribute="bottom" id="VZM-lh-4d1"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="2XT-WT-I6Q" secondAttribute="bottom" constant="136" id="ZzM-T7-mI8"/>
+                            <constraint firstItem="GiP-fI-rZg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aLG-RR-90D"/>
+                            <constraint firstItem="BWr-MS-uFg" firstAttribute="leading" secondItem="07B-5h-5HT" secondAttribute="leading" id="iiL-de-ik7"/>
+                            <constraint firstAttribute="trailing" secondItem="GiP-fI-rZg" secondAttribute="trailing" id="j68-g9-dLF"/>
+                            <constraint firstItem="07B-5h-5HT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="255" id="jHz-wZ-o80"/>
+                            <constraint firstItem="BWr-MS-uFg" firstAttribute="trailing" secondItem="07B-5h-5HT" secondAttribute="trailing" id="lZp-4V-cdi"/>
+                            <constraint firstItem="07B-5h-5HT" firstAttribute="leading" secondItem="2XT-WT-I6Q" secondAttribute="leading" id="noR-Vd-Yj5"/>
+                            <constraint firstItem="GiP-fI-rZg" firstAttribute="leading" secondItem="BWr-MS-uFg" secondAttribute="leading" id="ryS-dF-UBq"/>
+                            <constraint firstItem="GiP-fI-rZg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wbQ-jJ-MMr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
+                    <connections>
+                        <outlet property="btnGrid" destination="2XT-WT-I6Q" id="5Zr-b7-YcQ"/>
+                        <outlet property="btnHelix" destination="07B-5h-5HT" id="hx7-87-RdC"/>
+                        <outlet property="btnOne" destination="i25-3d-dRO" id="zMk-3s-HYb"/>
+                        <outlet property="btnSphere" destination="BWr-MS-uFg" id="92T-9t-cGc"/>
+                        <outlet property="btnTable" destination="GiP-fI-rZg" id="GWq-Sb-AWn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
